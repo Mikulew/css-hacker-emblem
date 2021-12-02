@@ -27,3 +27,4 @@ When you put **the glider emblem** on your web page, or wear it on clothing, or 
 - [http://www.catb.org/hacker-emblem/](http://www.catb.org/hacker-emblem/)
 - [Glider (Conway's Life)](https://en.wikipedia.org/wiki/Glider_(Conway%27s_Life)#Hacker_emblem)
 - [Emblemat hakerski](https://pl.wikipedia.org/wiki/Emblemat_hakerski)
+- [CSS divide width 100% to 3 column](https://stackoverflow.com/questions/18781713/css-divide-width-100-to-3-column)

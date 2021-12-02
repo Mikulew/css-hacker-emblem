@@ -38,8 +38,8 @@ body {
 .square {
   position: relative;
   border: 2px solid var(--yangColor);
-  width: 33.33%;
-  height: 33.33%;
+  width: calc(100% / 3);
+  height: calc(100% / 3);
 }
 
 .square:nth-child(1) {
