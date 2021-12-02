@@ -1,0 +1,102 @@
+:root {
+  --yangColor: #d8c21e;
+  --yinColor: #111111;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: var(--yinColor);
+}
+
+*,
+*::before,
+*::after {
+  font-size: inherit;
+  font-family: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.emblem {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+  height: 50vw;
+}
+
+.square {
+  position: relative;
+  border: 2px solid var(--yangColor);
+  width: 33.33%;
+  height: 33.33%;
+}
+
+.square:nth-child(1) {
+  border-top: 4px solid var(--yangColor);
+  border-left: 4px solid var(--yangColor);
+}
+
+.square:nth-child(2) {
+  border-top: 4px solid var(--yangColor);
+}
+
+.square:nth-child(3) {
+  border-top: 4px solid var(--yangColor);
+  border-right: 4px solid var(--yangColor);
+}
+
+.square:nth-child(4) {
+  border-left: 4px solid var(--yangColor);
+}
+
+.square:nth-child(6) {
+  border-right: 4px solid var(--yangColor);
+}
+
+.square:nth-child(7) {
+  border-bottom: 4px solid var(--yangColor);
+  border-left: 4px solid var(--yangColor);
+}
+
+.square:nth-child(8) {
+  border-bottom: 4px solid var(--yangColor);
+}
+
+.square:nth-child(9) {
+  border-bottom: 4px solid var(--yangColor);
+  border-right: 4px solid var(--yangColor);
+}
+
+.square:nth-child(2)::after,
+.square:nth-child(6)::after,
+.square:nth-child(7)::after,
+.square:nth-child(8)::after,
+.square:nth-child(9)::after {
+  content: '';
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--yangColor);
+}
+
+@media (max-width: 768px) {
+  .emblem {
+    width: 75vw;
+    height: 75vw;
+  }
+}
